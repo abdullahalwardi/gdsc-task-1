@@ -12,7 +12,7 @@ class MyHomePage extends StatelessWidget {
         centerTitle: true,
         leading: const Icon(Icons.menu),
       ),
-      body: Center(child: Image.asset('gdsclogo.jpg')),
+      body: Center(child: Image.asset('assets/gdsclogo.jpg')),
     );
   }
 }
