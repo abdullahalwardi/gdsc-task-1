@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: const MyHomePage(),
     );
   }
@@ -37,37 +38,28 @@ class MyHomePage extends StatelessWidget {
                 Text(
                   "Let's dart together!",
                   style: TextStyle(
-                    fontSize: 20,
-                    // color: Colors.black,
-                    fontWeight: FontWeight.bold,
-                  ),
+                      fontSize: 28,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold),
                 ),
                 Text(
                   "Flutter Team",
                   style: TextStyle(
-                    fontSize: 15,
-                    color: Colors.blue,
+                    fontSize: 18,
+                    color: Colors.blue.shade900,
                   ),
                 ),
               ],
             ),
             CircleAvatar(
-              radius: 130,
-              backgroundColor: Color.fromARGB(255, 169, 219, 255),
-              child: Image(
-                image: AssetImage(
-                  "assets/images/gdsc.png",
-                ),
-              ),
-            ),
-            Text(
-              "Noor Basim Mohammed",
-              style: TextStyle(
-                fontSize: 18,
-                color: Colors.blue,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
+                radius: 130,
+                backgroundColor: Color.fromARGB(255, 169, 219, 255),
+                child: Image(image: AssetImage("assets/images/gdsc.png"))),
+            Text("Noor Basim Mohammed",
+                style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.blue.shade900,
+                    fontWeight: FontWeight.bold)),
           ],
         ),
       ),
