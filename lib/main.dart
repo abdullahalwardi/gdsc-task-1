@@ -55,12 +55,14 @@ class MyHomePage extends StatelessWidget {
                 radius: 130,
                 backgroundColor: Color.fromARGB(255, 169, 219, 255),
                 child: Image(image: AssetImage("assets/images/gdsc.png"))),
-            Text("Noor Basim Mohammed",
-                style: TextStyle(
-                    fontSize: 18,
-                    color: Colors.blue.shade900,
-                    fontWeight: FontWeight.bold)),
-          
+            Text(
+              "Noor Basim Mohammed",
+              style: TextStyle(
+                fontSize: 18,
+                color: Colors.blue.shade900,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ],
         ),
       ),
