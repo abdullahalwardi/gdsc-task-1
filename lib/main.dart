@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Task1Text.dart';
 
 void main() {
   runApp(const MyApp());
@@ -47,48 +48,20 @@ class MyHomePage extends StatelessWidget {
                   Task1Text(
                       text: "Flutter team",
                       size: 20,
-                      color: Colors.blue.shade200),
+                      color: Colors.blue.shade400),
                 ],
               ),
               CircleAvatar(
                 backgroundImage:
                     const AssetImage("assets/images/googleclub.png"),
-                backgroundColor: Colors.pink.shade300,
+                backgroundColor: Colors.blue.shade300,
                 radius: 150,
               ),
-              const Task1Text(
-                text: "Baneen Ahmed",
-                size: 20,
-                color: Colors.black,
-              )
+              Task1Text(
+                  text: "Baneen Ahmed", size: 20, color: Colors.blue.shade400),
             ],
           ),
         ),
-      ),
-    );
-  }
-}
-
-class Task1Text extends StatelessWidget {
-  const Task1Text({
-    Key? key,
-    required this.color,
-    required this.size,
-    required this.text,
-  }) : super(key: key);
-
-  final String text;
-  final double size;
-  final Color color;
-
-  @override
-  Widget build(BuildContext context) {
-    return Text(
-      text,
-      style: TextStyle(
-        fontSize: size,
-        fontWeight: FontWeight.bold,
-        color: color,
       ),
     );
   }
